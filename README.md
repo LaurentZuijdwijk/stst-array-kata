@@ -5,8 +5,16 @@ _Learn the basics of python one file at a time._
 ## 00 _ Before you start
 
 Before you start these sessions consider the project structure
- and the requirements file. These serve as examples for your
-  future projects.
+and the requirements file. These serve as examples for your
+future projects.
+
+### Install Python
+
+You will require Python 3.X to run this project.
+
+You can install Visual Studio Code runtimes easily through the
+extensions manager, or you can install Python from 
+https://www.python.org/downloads/.
 
 ### Project structure
 
@@ -21,16 +29,16 @@ Before you start these sessions consider the project structure
   - And the `src/requirements.txt` is the file definining
     the package dependencies of the project.
 
-> #### The requirements.txt file
->
-> It is good practice to keep dependencies on `pip`
-> libraries listed there so that they can be installed in any
-> environment the code is run, without being specific about
-> whether it is Windows or Linux.
->
-> To be able to run with those dependencies installed run:
->
-> ```pip install -r src/requirements.txt```
+#### The requirements.txt file
+
+It is good practice to keep dependencies on `pip`
+libraries listed there so that they can be installed in any
+environment the code is run, without being specific about
+whether it is Windows or Linux.
+
+To be able to run with those dependencies installed run:
+
+```pip install -r src/requirements.txt```
 
 ## 01 _ Python Basics
 
