@@ -38,7 +38,9 @@ whether it is Windows or Linux.
 
 To be able to run with those dependencies installed run:
 
-```pip install -r src/requirements.txt```
+```python
+pip install -r src/requirements.txt
+```
 
 ## 01 _ Python Basics
 
