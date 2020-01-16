@@ -1,3 +1,6 @@
+# Prerequisite:
+# Install psycopg2 library - pip install psycopg2
+
 import psycopg2
 
 con = None
