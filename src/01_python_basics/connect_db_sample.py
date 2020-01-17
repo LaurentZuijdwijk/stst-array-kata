@@ -8,11 +8,11 @@ con = None
 try:
 
     # create a connection to the redshift db
-    con = psycopg2.connect(dbname='enigmadb'
-                        , user='katauser'
-                        , password='Kata1234'
-                        , host='enigma-dev-cluster.cnxohrjczoor.eu-west-1.redshift.amazonaws.com'
-                        , port='5439')                    
+    con = psycopg2.connect(dbname="enigmadb"
+                        , user="katauser"
+                        , password="Kata1234"
+                        , host="enigma-dev-cluster.cnxohrjczoor.eu-west-1.redshift.amazonaws.com"
+                        , port="5439")                    
 
     # get a cursor from the db connection
     cur = con.cursor()
