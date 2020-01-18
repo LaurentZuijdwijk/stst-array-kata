@@ -1,8 +1,8 @@
-'''
+"""
 Every .py file in a Python project is called a "module".
 
 For example, this is the "modules_and_functions" module.
-'''
+"""
 
 # Modules contain Python code that is interpreted sequentially,
 # but they can also contain funtions defined as small pieces of
@@ -16,12 +16,12 @@ print("This is executed sequentially as part of this module.")
 # body after a colon symbol (:).
 
 def func(parameter_one):
-    '''
+    """
     This is a module function.
 
     Parameters:
     - parameter_one: Literally anything. It will just print it.
-    '''
+    """
     print(parameter_one)
 
 # Modules can continue after functions are defined.
