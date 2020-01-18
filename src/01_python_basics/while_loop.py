@@ -1,7 +1,7 @@
-'''
+"""
 While loops enable your code to iterate over a body of code while
 a condition is evaluated to True.
-'''
+"""
 
 x = 0
 while(x <= 5):
@@ -11,13 +11,13 @@ while(x <= 5):
 
 print("I'm outside the loop.")
 
-'''
+"""
 The keyword "continue" enables your code to skip bits within a loop and
 go straight to the next iteration.
 
 The keyword "break" enables your code to break the loop early if a condition
 is met.
-'''
+"""
 
 x = 0
 while(x <= 5):
