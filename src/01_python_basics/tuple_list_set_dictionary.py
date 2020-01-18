@@ -21,7 +21,8 @@ print("These are the elements in my Tuple:")
 for element in myTuple:
     print("- {}".format(element))
 
-print("Element #1 in my Tuple is {}.".format(myTuple[1]))
+print("First element in my Tuple is {}.".format(myTuple[0]))
+print("Last element in my Tuple is {}.".format(myTuple[-1]))
 
 # LISTS are defined with SQUARE BRACKETS
 # e.g. [1, 2, 3]
@@ -38,7 +39,8 @@ print("These are the elements in my List:")
 for element in myList:
     print("- {}".format(element))
 
-print("Element #1 in my List is {}.".format(myList[1]))
+print("First element in my List is {}.".format(myList[0]))
+print("Last element in my List is {}.".format(myList[-1]))
 
 # SETS are defined with CURLY BRACKETS
 # e.g. {1, 2, 3}
