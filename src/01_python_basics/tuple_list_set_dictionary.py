@@ -75,7 +75,7 @@ myDictionary = {
     "Ireland":"Dublin",
     "Kingdom":"London",
     "Germany":"Berlin", 
-    "Japan":"Tokio"
+    "Japan":"Tokyo"
 }
 
 for country in myDictionary:
