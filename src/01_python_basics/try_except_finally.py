@@ -26,3 +26,33 @@ finally:
     print("In any case, the ""finally"" block will execute.")
 
 print(":: try_except_finally.py :: DONE\n\n")
+
+# You can different type of exceptions
+import math
+
+def getsqrt(x):
+    """Compute the square root of a number.
+
+    Parameters:
+    x : integer
+
+    Returns:
+    result : integer
+    """
+    try:
+        result = math.sqrt(x)
+        return result
+    #specific error
+    # except ValueError:
+    #     print("Value cannot be negative")
+    #generic error
+    except Exception as err:
+        print(err)
+    #multiple errors
+    # except (Exception,ValueError) as err:
+    #     print(err)
+    finally:
+        print("exiting function")
+
+answer = getsqrt(-1)
+print(answer)
