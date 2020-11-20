@@ -33,9 +33,15 @@ def func() :
     scoped_var = "OK"
 
     # scoped_var is defined within func() so it can be accessed within
-    # the scope of this function or 
+    # the scope of this function 
 
     print("This code can access the scoped_var {}".format(scoped_var))
+    
+    # myVariable is a module level variable
+    print("I can access the module level myVariable {}".format(myVariable))
+    
+# Call function
+func()
 
 # Uncomment the following line to see a compilation error
 # print("This code cannot reach scoped_var.".format(scoped_var))
