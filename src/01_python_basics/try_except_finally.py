@@ -27,7 +27,7 @@ finally:
 
 
 
-# You can different type of exceptions
+# You can handle different types of exceptions
 import math
 
 def getsqrt(x):
