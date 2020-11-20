@@ -25,7 +25,7 @@ except Exception as ex:
 finally:
     print("In any case, the ""finally"" block will execute.")
 
-print(":: try_except_finally.py :: DONE\n\n")
+
 
 # You can different type of exceptions
 import math
@@ -56,3 +56,5 @@ def getsqrt(x):
 
 answer = getsqrt(-1)
 print(answer)
+
+print(":: try_except_finally.py :: DONE\n\n")
