@@ -11,7 +11,6 @@ if(1 == 1):
 else:
     print("This code will evidently never run")
 
-print(":: conditional.py :: DONE\n\n")
 
 
 # Example 2
@@ -24,3 +23,5 @@ elif x > y:
 else:
     print("x is less than y")
 
+    
+print(":: conditional.py :: DONE\n\n")
