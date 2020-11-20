@@ -27,9 +27,17 @@ side effects when importing them into other code.
 
 # Once imported, you can use their code
 
+# Using the local_print function which is the alias for the func function
 sqrt4 = math.sqrt(4)
 local_print("The square root of 4 is {}.".format(sqrt4))
 
 
+# Using the print_contents function
+from myfunctions import print_contents
+
+help(print_contents) # displays docstring
+
+thistuple = ("today", 4.5, True)
+print_contents(thistuple)
 
 print(":: imports.py :: DONE\n\n")
