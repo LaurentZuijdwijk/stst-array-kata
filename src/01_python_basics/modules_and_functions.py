@@ -15,6 +15,7 @@ print("This is executed sequentially as part of this module.")
 # to be called elsewhere in the code, and start their executable
 # body after a colon symbol (:).
 
+# Example 1
 def func(parameter_one):
     """
     This is a module function.
@@ -30,3 +31,18 @@ def func(parameter_one):
 func("This will call the function from the global scope of this module.")
 
 print(":: modules_and_functions.py :: DONE\n\n")
+
+
+# Example 2
+def print_contents(listofitems):
+    """ Prints the contents of the passed in collection.
+
+        Parameters:
+        listofitems: list or tuple or set
+    """
+    for item in listofitems:
+        print(item)
+        
+# Calling the function
+thistuple = ("today", 4.5, True)
+print_contents(thistuple)
