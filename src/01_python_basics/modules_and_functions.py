@@ -30,8 +30,6 @@ def func(parameter_one):
 
 func("This will call the function from the global scope of this module.")
 
-print(":: modules_and_functions.py :: DONE\n\n")
-
 
 # Example 2
 def print_contents(listofitems):
@@ -46,3 +44,5 @@ def print_contents(listofitems):
 # Calling the function
 thistuple = ("today", 4.5, True)
 print_contents(thistuple)
+
+print(":: modules_and_functions.py :: DONE\n\n")
