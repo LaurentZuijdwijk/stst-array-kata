@@ -53,7 +53,7 @@ Sets are a non-sequential data type in Python characterised by:
 - Being non-indexed (cannot access a particular index)
 """
 
-mySet = {None, 1, "Two"}
+mySet = {None, 1, 1, "Two"}
 print("These are the elements in my Set:")
 for element in mySet:
     print("- {}".format(element))
