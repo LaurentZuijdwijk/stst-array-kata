@@ -23,9 +23,7 @@ class TweetArray {
         this.length = 0;
     }
     push(tweet) {
-        if(this.length >= this.maxLength) throw new Error('Maximum number of tweets reached');
         let offset = this.length * TweetArray.CHAR_LIMIT;
-        // if(tweet.length > TweetArray.CHAR_LIMIT) throw new Error('Tweet length is limited to 140 chars');
         for (let i = 0; i < tweet.length; i++) {
             this.store.writeUInt8(tweet.charCodeAt(i), offset);
             offset++;
@@ -41,8 +39,8 @@ class TweetArray {
 // TASK: Improve the push method above to throw an error when the tweet is too long. The tests below will have to pass.
 // TASK: Improve the push method above to throw an error when we reach the max number of items. The tests below will have to pass.
 // TASK: Tweets are also returned with too many characters. This must be fixed in the get() function.
-const tweetArr = new TweetArray(3);
 
+const tweetArr = new TweetArray(3);
 tweetArr.push('First tweet')
 
 const tracker = new assert.CallTracker();
@@ -55,22 +53,16 @@ catch (error){
     equal(error.message, 'Tweet length is limited to 140 chars');
 }
 
-
-
 tweetArr.push('Second tweet')
-
-console.log('1', tweetArr.get(1))
-console.log('2', tweetArr.get(2))
-
-// tweetArr.push('Third tweet')
-// try{
-//     // tweetArr.push('fourth tweet')
-// } catch(error){
-//     equal(error.message, 'Maximum number of tweets reached')
-// }
-// equal(tweetArr.get(1), 'Second tweet')
-// equal(tweetArr.get(2), 'Third tweet')
+tweetArr.push('Third tweet')
+try{
+    tweetArr.push('fourth tweet')
+} catch(error){
+    equal(error.message, 'Maximum number of tweets reached')
+}
+equal(tweetArr.get(1), 'Second tweet')
+equal(tweetArr.get(2), 'Third tweet')
 process.on('exit', () => {
-//   tracker.verify();
+  tracker.verify();
 });
 

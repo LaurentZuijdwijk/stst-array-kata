@@ -1,5 +1,5 @@
-/**
- 
+/*
+
 An array is an iterable object where data is stored by numbered indices. 
 Arrays are fast to store and retrieve data and are widely used. 
 The javascript standard lib array has plenty of functional methods to sort, filter, search etc
@@ -19,7 +19,7 @@ assert.equal(numbers[0], 1);
 assert.equal(numbers[1], 2);
 assert.equal(numbers.length, 2);
 
-// TASK 2: convert all strings in teh array below to uppercase
+// TASK 2: convert all strings in thh array below to uppercase
 const animals = ['cat', 'dog', 'horse'];
 
 const uppercase = animals;
@@ -27,4 +27,4 @@ const uppercase = animals;
 assert.equal(uppercase.length, 3);
 assert.equal(uppercase[0], 'CAT');
 
-
+console.log('Well done! You completed this exercise.');

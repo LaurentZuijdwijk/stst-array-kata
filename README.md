@@ -13,13 +13,14 @@ Make sure you have the latests NodeJS version installed. We won't be using any e
 ### Project structure
 
 - The `README.md` explains the basics of the project.
-- The `.gitignore` is tailored to generic Python projects.
-- The `.vscode` folder contains:
-  - A `launch.json` file defining how to run the project.
-  - A `tasks.json` file that ensures `pip` is run before
-    debug to install all package dependencies.
 - The `src` folder is where all code is.
-  - There, the `src/main.py` is the entry point to the code.
-  - And the `src/requirements.txt` is the file definining
-    the package dependencies of the project.
+  
+The exercises are numbered. Each file contains text describing the exercise and some code. 
+The file will contain assertions which should pass when running the file. 
 
+For example: 
+run `node ./src/01-getting-started.js`
+The terminal will output an error. 
+Follow the instructions and add code to make the assertions pass
+run `node ./src/01-getting-started.js`
+No error will be displayed.

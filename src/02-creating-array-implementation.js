@@ -6,7 +6,6 @@ In C, C++, Rust and other typed low level languages we need to define exactly wh
 and sometimes the length has to be defined so that the right amount of memory can be reserved. 
 Life in JS land is so much simpler, we can put whatever data we want in an array until we run out of physical memory. 
 
-
 In these exercises we are going to create a fixed size array to store tweets in a buffer and learn about various new javascript API's along the way. 
 
 Our approach will be to create an array like class, which uses an underlying datastorage which isn't a JS array. 
@@ -84,7 +83,6 @@ let tweetArrayInstance;
 // Task: Use the tweet array implementation to add 5 tweets. 
 // Task: First tweet should be "just setting up my twttr", the first tweet ever tweeted. 
 // Task: In the `get`` method we need to add a string function to retrieve the right string length.
-
 
 // ADD CODE HERE
 assert.equal(tweetArrayInstance.length, 5);
