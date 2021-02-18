@@ -1,20 +1,14 @@
 # Py Kata
 
-_Learn the basics of python one file at a time._
+_Advanced javascript and NodeJS._
 
 ## 00 _ Before you start
 
-Before you start these sessions consider the project structure
-and the requirements file. These serve as examples for your
-future projects.
+Before you start these sessions consider the project structure.
 
-### Install Python
+### Installation 
 
-You will require Python 3.X to run this project.
-
-You can install Visual Studio Code runtimes easily through the
-extensions manager, or you can install Python from 
-https://www.python.org/downloads/.
+Make sure you have the latests NodeJS version installed. We won't be using any external libraries.
 
 ### Project structure
 
@@ -29,31 +23,3 @@ https://www.python.org/downloads/.
   - And the `src/requirements.txt` is the file definining
     the package dependencies of the project.
 
-#### The requirements.txt file
-
-It is good practice to keep dependencies on `pip`
-libraries listed there so that they can be installed in any
-environment the code is run, without being specific about
-whether it is Windows or Linux.
-
-To be able to run with those dependencies installed run:
-
-```python
-pip install -r src/requirements.txt
-```
-
-## 01 _ Python Basics
-
-On this first session, find one file at a time the very
-basics of every Python program, such as:
-
-- Comments (one line, multiline and scoped)
-- Conditional expressions
-- For loops
-- While loops
-- Modules and functions
-- Module imports
-- Main module
-- Error handling (Try-Except-Finally)
-- Tuples, Lists, Sets and Dictionaries
-- Variables and scopes
