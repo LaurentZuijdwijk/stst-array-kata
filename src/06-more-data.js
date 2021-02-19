@@ -24,7 +24,7 @@ class TweetArray {
     constructor(size) {
         this.maxLength = size;
         // This is our buffer datastore
-        this.store = Buffer.alloc(this.maxLength * (TweetArray.CHAR_LIMIT + 8), ' ');
+        this.store = Buffer.alloc(this.maxLength * (TweetArray.CHAR_LIMIT), ' ');
         this.length = 0;
     }
     push(tweet) {
@@ -35,8 +35,6 @@ class TweetArray {
             throw new Error('Tweet is too long')
         }
         let offset = this.length * TweetArray.CHAR_LIMIT;
-        this.store.writeBigUInt64LE(BigInt(this.length+1), offset);
-        offset+=8
         for (let i = 0; i < tweet.length; i++) {
             this.store.writeUInt8(tweet.charCodeAt(i), offset);
             offset++;
@@ -45,7 +43,7 @@ class TweetArray {
     }
     get(index) {
         const offset = TweetArray.CHAR_LIMIT * index;
-        return [this.store.readBigInt64LE(offset), this.store.toString('binary', offset+8, offset + TweetArray.CHAR_LIMIT).trim()];
+        return this.store.toString('binary', offset+8, offset + TweetArray.CHAR_LIMIT).trim();
     }
     filter(fn) {
         const result = new TweetArray(this.length)
