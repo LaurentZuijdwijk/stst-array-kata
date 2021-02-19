@@ -70,7 +70,6 @@ tweetArr.push('b')
 
 // TASK: implement the iterable protocol on the TweetArray class so that the assertions below will pass
 
-tweetArr.save();
 assert.equal([...tweetArr][0], 'a')
 assert.equal([...tweetArr][1], 'b')
 assert.equal(tweetArr[Symbol.iterator]().next().value, 'a')
