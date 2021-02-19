@@ -66,3 +66,4 @@ process.on('exit', () => {
   tracker.verify();
 });
 
+console.log('Well done! You completed this exercise.');

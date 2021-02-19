@@ -1,7 +1,7 @@
 /*
 
 We now have this array with strings of 140 characters. What if we would like to add some more data?
-Would it be possible to add ids to our datastructure? How would we do that?
+Would it be possible to add ids to our data structure? How would we do that?
 
 Twitter ids are made up of 64 bit integers. They are generated based on timestamp, worker-id and sequence number.
 
@@ -10,8 +10,8 @@ Javascript Numbers do not support 64 bit numbers, but fortunately the new-ish Bi
 We will have to modify our code a bit to support our new ids. 
 - We will have to increase the space in our buffer with 64 bits per row.
 - Create a function to generate ids
-- modify the push function to write the id and tweet seperately.
-- modify the get funtion to read the id and tweet seperately
+- modify the push function to write the id and tweet separately.
+- modify the get function to read the id and tweet separately
 
 */
 const assert = require('assert').strict;
@@ -92,21 +92,4 @@ assert.equal([...tweetArr][1][0], 2n);
 assert.equal([...tweetArr][0][1], 'My first tweet');
 assert.equal([...tweetArr][1][1], 'My second tweet');
 
-
-// var buf = Buffer.alloc(1000);
-
-// var b = BigInt(2364563635664566450);
-
-// console.log(b);
-// buf.writeBigUInt64LE(b);
-
-// console.log(buf.readBigInt64LE().toString())
-
-
-// var a = BigUint64Array()
-
-
-// Our implementation for storing data is quite naive. We reserve a fixed amount of space
-// for each tweet. This has a couple of pros, such as speed of access and no need for an 
-// additional index. 
-// Updating and deleting are also easy and we do not need to worry so much about defragmented memory space.
+console.log('Well done! You completed this exercise.');

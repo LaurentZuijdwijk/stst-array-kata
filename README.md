@@ -1,4 +1,4 @@
-# Py Kata
+# Javascript Kata
 
 _Advanced javascript and NodeJS._
 

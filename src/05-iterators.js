@@ -1,5 +1,3 @@
-const assert = require('assert').strict;
-
 /*
 
 Arrays and Sets and other standard javascript objects now implement the iterable protocol. 
@@ -9,7 +7,7 @@ article explains it better than I could.
 
 Here we will add the iterable protocol to our class so that it will really behave like a native array.
 */
-
+const assert = require('assert').strict;
 
 class TweetArray {
     // The old twitter char limit of 140
@@ -65,11 +63,13 @@ class TweetArray {
     }
 }
 const tweetArr = new TweetArray(1000);
-tweetArr.push('a')
-tweetArr.push('b')
+tweetArr.push('a');
+tweetArr.push('b');
 
 // TASK: implement the iterable protocol on the TweetArray class so that the assertions below will pass
 
-assert.equal([...tweetArr][0], 'a')
-assert.equal([...tweetArr][1], 'b')
-assert.equal(tweetArr[Symbol.iterator]().next().value, 'a')
+assert.equal([...tweetArr][0], 'a');
+assert.equal([...tweetArr][1], 'b');
+assert.equal(tweetArr[Symbol.iterator]().next().value, 'a');
+
+console.log('Well done! You completed this exercise.');

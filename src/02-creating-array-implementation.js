@@ -8,14 +8,14 @@ Life in JS land is so much simpler, we can put whatever data we want in an array
 
 In these exercises we are going to create a fixed size array to store tweets in a buffer and learn about various new javascript API's along the way. 
 
-Our approach will be to create an array like class, which uses an underlying datastorage which isn't a JS array. 
+Our approach will be to create an array like class, which uses an underlying data storage which isn't a JS array. 
 We will create a fixed sized buffer to store N number of tweets with a fixed length as specified in the constructor. In our MVP we will have a constructor,
 a push and a get function. Later we will add more functionality. 
 
-A buffer is a bit like an array, it is a fixed-lenght sequence of bytes that we can use to store data in. It extends Uint8Array, which is an array that 
+A buffer is a bit like an array, it is a fixed-length sequence of bytes that we can use to store data in. It extends Uint8Array, which is an array that 
 can hold an ASCII character per position.
 
-We store the data directly in memory, using a buffer. The data design is kept simple instead of highly optimised.
+We store the data directly in memory, using a buffer. The data design is kept simple instead of highly optimized.
 
 The storage space will have the following design:
 - fixed size memory
@@ -56,8 +56,8 @@ class TweetArray {
     // size is the max number of tweets we can store. 
     constructor(size) {
         // This is our buffer datastore
-        this.maxlength = size;
-        this.store = Buffer.alloc(this.maxlength * TweetArray.CHAR_LIMIT, ' ');
+        this.maxLength = size;
+        this.store = Buffer.alloc(this.maxLength * TweetArray.CHAR_LIMIT, ' ');
         this.length = 0;
     }
     push(tweet) {
@@ -76,7 +76,7 @@ class TweetArray {
 
 let tweetArrayInstance;
 
-// Question 1: What happens if we use a tweet lenght bigger than 140 (static CHAR_LIMIT = 140) characters?
+// Question 1: What happens if we use a tweet length bigger than 140 (static CHAR_LIMIT = 140) characters?
 // Question 2: What happens if we add more tweets than we defined in the size parameter?
 // Question 3: Why do we only support strings in this TweetArray class? What would happen if we try to store numbers?
 
@@ -87,3 +87,4 @@ let tweetArrayInstance;
 // ADD CODE HERE
 assert.equal(tweetArrayInstance.length, 5);
 assert.equal(tweetArrayInstance.get(0).trim(), "just setting up my twttr");
+console.log('Well done! You completed exercise 2.');
