@@ -63,16 +63,6 @@ class TweetArray {
         })
         return returnString.slice(0, -1 * str.length);
     }
-    *[Symbol.iterator]() {
-        for (let i = 0; i < this.length; i++) {
-            yield this.get(i);
-        }
-        return this;
-    }
-    save(filename){
-        const fs= require('fs');
-        fs.writeFileSync('filename', this.store);
-    }
 }
 const tweetArr = new TweetArray(1000);
 tweetArr.push('a')
