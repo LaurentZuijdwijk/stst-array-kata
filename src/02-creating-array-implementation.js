@@ -1,4 +1,4 @@
-
+const assert = require('assert').strict;
 /*
 We are going to create a typed array using a buffer in NodeJS. The resulting code will feel like a lower level language!
 
@@ -42,12 +42,7 @@ Example data layout:
 
 Reading: https://nodejs.org/api/buffer.html
 
-Requirements: node.js version 14
-
 */
-
-const assert = require('assert').strict;
-
 
 class TweetArray {
     // The old twitter char limit of 140
@@ -74,17 +69,25 @@ class TweetArray {
     }
 }
 
-let tweetArrayInstance;
 
 // Question 1: What happens if we use a tweet length bigger than 140 (static CHAR_LIMIT = 140) characters?
 // Question 2: What happens if we add more tweets than we defined in the size parameter?
 // Question 3: Why do we only support strings in this TweetArray class? What would happen if we try to store numbers?
 
-// Task: Use the tweet array implementation to add 5 tweets. 
-// Task: First tweet should be "just setting up my twttr", the first tweet ever tweeted. 
-// Task: In the `get`` method we need to add a string function to retrieve the right string length.
+// Task 1: Use the tweet array implementation to add 5 tweets. The first tweet should be "just setting up my twttr", the first tweet ever tweeted. 
 
 // ADD CODE HERE
-assert.equal(tweetArrayInstance.length, 5);
-assert.equal(tweetArrayInstance.get(0).trim(), "just setting up my twttr");
-console.log('Well done! You completed exercise 2.');
+let tweetArrayInstance;
+
+assert.equal(tweetArrayInstance.length, 5)
+assert.equal(tweetArrayInstance.get(0).trim(), "just setting up my twttr")
+
+console.log('\x1b[1m\x1b[36mWell done, you completed task 1.\x1b[0m')
+
+// Task 2: In the `get`` method we need to add a string function to retrieve the right string length, without excess whitespace. 
+
+// ADD CODE HERE
+
+console.assert(tweetArrayInstance.get(0), "just setting up my twttr")
+
+console.log('\x1b[1m\x1b[36mWell done! You completed exercise 2.\x1b[0m')

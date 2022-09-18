@@ -1,3 +1,4 @@
+const assert = require('assert').strict;
 /*
 
 So we have a fairly well working basic array class to store tweets, but 
@@ -7,9 +8,6 @@ look a bit more like a native array!
 
 There will still be some things missing, but we will do those in the next exercise.
 */
-
-const assert = require('assert').strict;
-
 
 class TweetArray {
     // The old twitter char limit of 140

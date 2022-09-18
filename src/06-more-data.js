@@ -1,3 +1,4 @@
+const assert = require('assert').strict;
 /*
 
 We now have this array with strings of 140 characters. What if we would like to add some more data?
@@ -14,7 +15,6 @@ We will have to modify our code a bit to support our new ids.
 - modify the get function to read the id and tweet separately
 
 */
-const assert = require('assert').strict;
 
 class TweetArray {
     // The old twitter char limit of 140

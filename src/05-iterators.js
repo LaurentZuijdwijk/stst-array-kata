@@ -1,5 +1,5 @@
+const assert = require('assert').strict;
 /*
-
 Arrays and Sets and other standard javascript objects now implement the iterable protocol. 
 This gives support for syntactic sugar such as array spreads [...array] and for...of loops.
 This https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols MDN 
@@ -7,7 +7,6 @@ article explains it better than I could.
 
 Here we will add the iterable protocol to our class so that it will really behave like a native array.
 */
-const assert = require('assert').strict;
 
 class TweetArray {
     // The old twitter char limit of 140
