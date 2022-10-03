@@ -70,11 +70,11 @@ class TweetArray {
 }
 
 
+// Task 1: Use the tweet array implementation to add 5 tweets. The first tweet should be "just setting up my twttr", the first tweet ever tweeted. 
+
 // Question 1: What happens if we use a tweet length bigger than 140 (static CHAR_LIMIT = 140) characters?
 // Question 2: What happens if we add more tweets than we defined in the size parameter?
 // Question 3: Why do we only support strings in this TweetArray class? What would happen if we try to store numbers?
-
-// Task 1: Use the tweet array implementation to add 5 tweets. The first tweet should be "just setting up my twttr", the first tweet ever tweeted. 
 
 // ADD CODE HERE
 let tweetArrayInstance;

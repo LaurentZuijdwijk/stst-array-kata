@@ -37,7 +37,6 @@ class TweetArray {
 
 // TASK: Improve the push method above to throw an error when the tweet is too long. The tests below will have to pass.
 // TASK: Improve the push method above to throw an error when we reach the max number of items. The tests below will have to pass.
-// TASK: Tweets are also returned with too many characters. This must be fixed in the get() function.
 
 const tweetArr = new TweetArray(3)
 tweetArr.push('First tweet')
