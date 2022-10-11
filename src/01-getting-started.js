@@ -3,7 +3,7 @@ const assert = require('assert').strict
 /*
 
 An array is an iterable object where data is stored in numbered indices. 
-Arrays are fast to store and retrieve data and are widely used. 
+Arrays are fast to store and retrieve data and are universally used.
 The javascript standard lib array has plenty of functional methods to sort, filter and search data.
 
 In javascript we do not have to specify the length or memory requirements or data type of our arrays. 

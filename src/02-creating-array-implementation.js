@@ -65,7 +65,7 @@ class TweetArray {
     }
     get(index) {
         const offset = TweetArray.CHAR_LIMIT * index
-        return this.store.toString('binary', offset, offset + TweetArray.CHAR_LIMIT);
+        return this.store.toString('binary', offset, offset + TweetArray.CHAR_LIMIT).trim();
     }
 }
 
