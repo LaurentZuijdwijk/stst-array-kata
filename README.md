@@ -10,7 +10,7 @@ Before you start these sessions make sure you read this document.
 
 Have at least Node.js version 14 installed. There iis no need for any external libraries. Just a text editor and command line is all you need.
 
-We would recommend using VSCode with an embedded terminal.
+We would recommend using VSCode with an embedded terminal. Turn off any AI code helpers.
 
 ### Project structure
 
