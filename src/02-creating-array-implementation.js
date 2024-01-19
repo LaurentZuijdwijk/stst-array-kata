@@ -65,14 +65,14 @@ class TweetArray {
     }
     get(index) {
         const offset = TweetArray.CHAR_LIMIT * index
-        return this.store.toString('binary', offset, offset + TweetArray.CHAR_LIMIT).trim();
+        return this.store.toString('binary', offset, offset + TweetArray.CHAR_LIMIT);
     }
 }
 
 
 // Task 1: Use the tweet array implementation to add 5 tweets. The first tweet should be "just setting up my twttr", the first tweet ever tweeted. 
 
-// Question 1: What happens if we use a tweet length bigger than 140 (static CHAR_LIMIT = 140) characters?
+// Question 1: What happens if we use a tweet length bigger than 140 (static CHAR_LIMIT = 140) characters, try it out?
 // Question 2: What happens if we add more tweets than we defined in the size parameter?
 // Question 3: Why do we only support strings in this TweetArray class? What would happen if we try to store numbers?
 
